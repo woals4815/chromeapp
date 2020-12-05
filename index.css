@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: yellowgreen;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: thistle;
+}
+header{
+    font-size: 45px;
+    color: yellowgreen;
+    font-weight: 600;
+    margin-left: 1000px;
+}
+.js-clockContainer{
+    color: white;
+    font-size: 45px;
+}
+.js-form{
+    display: none;
+}
+.todoForm{
+    display: none;
+}
+input{
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    border-color: blanchedalmond;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.js-todoForm{
+    display: none;
+}
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+button{
+    background: none;
+    border: none;
+}
+h2{
+    font-size: 30px;
+}
+.todoList{
+    color: white;
+    font-size: 20px;
+}
